@@ -1,17 +1,23 @@
-# React + Vite
+# Dog Memory Game 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A memory card game built with React featuring cute dogs and fun facts! Test your memory by clicking on each dog only once.
 
-Currently, two official plugins are available:
+## Decription
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a memory game where players clicks on dog cards to score points. The twist? Each card shuffles after every click, and you lose if you click the same dog twice! The game fetches real dog images and random facts from free API.
 
-## React Compiler
+### How to play
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Click on any dog card to start 
+- Each new dog gives you +1 point
+- Cards shuffle after every click
+- Click the same dog twice and the game resets
+- Try to beat your best score!
 
-## Expanding the ESLint configuration
+## Built with 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-memory-card-project
+- React (Vite)
+- CSS3 (Mobile-first responsive design)
+- [Dog CEO API](https"//dog.ceo/dog-api/) -For dog images
+- [Dog Facts API](https://dog-api.kinduff.com/) -For random dog facts
+
