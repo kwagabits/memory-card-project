@@ -1,0 +1,30 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(120, 120, 241);
+}
+
+p,
+h4 {
+    opacity: 0.8;
+}
+
+@media screen and (min-width: 600px) {
+    footer {
+        padding: 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    footer {
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+    
+}

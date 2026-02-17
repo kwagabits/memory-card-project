@@ -1,0 +1,149 @@
+.gameboard {
+    flex: 1;
+    padding: 1rem;
+    width: 100%;
+}
+
+.loading {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: white;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.loading h2 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.loading p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.reset-btn {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.rem;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 90%;
+    max-width: 300px;
+}
+
+.reset-btn:hover {
+    background: #ff5252;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card:active {
+    transform: scale(0.98);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #667eea;
+}
+
+.fact-bubble {
+    padding: 0.8rem;
+    background: #f8f9fa;
+}
+
+.fact-bubble p {
+    color: #555;
+    line-height: 1.4;
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 500px) {
+    .gameboard {
+        padding: 1.5rem;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+
+    .reset-btn {
+        width: auto;
+        margin: 1.5rem;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .gameboard {
+        padding: 2rem;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .card-image {
+        height: 220px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .gameboard {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem 3rem;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+
+    .card-image {
+        height: 250px;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .loading h2 {
+        font-size: 1.8rem;
+    } 
+}
+
+@media screen and (min-width: 1400px) {
+    .card-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    
+    
+}
